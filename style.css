@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --norse-bold: 'NorseBold', Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bold {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.left-margin {
+    margin-left: 5vw;
+}
+
+.container-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    height: 100vh;
+    background-image: url('halie-west-img.jpg');
+    background-size: cover;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 2 1 0;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 25vh;
+    background: rgba(0,0,0,0.3);
+    height: 15vh;
+}
+
+.logo p {
+    margin: 0;
+    color: white;
+    font-size: 5em;
+    font-family: var(--norse-bold);
+}
+
+.logo img {
+    max-width: 100%;
+    max-width: 15%;
+    margin-right: 10px;
+}
+
+.footer {
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    font-style: none;
+    font-size: .8em;
+    padding: 10px;
+}
+
+.footer a:visited {
+    color: white;
+}
+
+.top-text {
+    position: relative;
+    flex: 1;
+    width: 60vw;
+}
+
+.top-text .bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.form-head {
+    position: relative;
+    top: 1.5vh;
+}
+
+.form {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form form {
+    display: flex;
+    width: 100%;
+}
+
+.form .form-left,
+.form .form-right{
+    margin: 10px;
+    padding: 20px;
+}
+
+.form-style {
+    height: 33vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.form-group.error input {
+    border-color: red;
+}
+
+.form-group.error .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.buttons {
+    flex: 1;
+}
+
+.submit-button {
+    display: block;
+    width: 20em;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
